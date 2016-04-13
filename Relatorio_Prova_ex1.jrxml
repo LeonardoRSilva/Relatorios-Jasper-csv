@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.1.final using JasperReports Library version 6.2.1  -->
+<!-- 2016-04-13T17:51:39 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Relatorio_Prova_ex1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d439cb44-1fb5-49ae-8750-f50c45f9b71f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Data Adapter Prova "/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_TH" mode="Opaque" backcolor="#F6F6F6">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#DDDDDD"/>
+			<bottomPen lineWidth="0.5" lineColor="#DDDDDD"/>
+		</box>
+	</style>
+	<style name="Table 2_CH" mode="Opaque" backcolor="#FCFEFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#DDDDDD"/>
+			<bottomPen lineWidth="0.5" lineColor="#DDDDDD"/>
+		</box>
+	</style>
+	<style name="Table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#F9F9F9"/>
+		</conditionalStyle>
+	</style>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="Valor Pagamento" class="java.lang.String"/>
+	<field name="Nome Favorecido" class="java.lang.String"/>
+	<field name="CPF Favorecido" class="java.lang.String"/>
+	<sortField name="CPF Favorecido"/>
+	<group name="Nome Favorecido">
+		<groupExpression><![CDATA[$F{CPF Favorecido}]]></groupExpression>
+		<groupHeader>
+			<band height="50">
+				<rectangle>
+					<reportElement x="0" y="17" width="555" height="30" forecolor="#F6F6F6" backcolor="#F6F6F6" uuid="4087aa64-5a06-4a2d-b048-d28a816737d2"/>
+					<graphicElement>
+						<pen lineStyle="Solid" lineColor="#DDDDDD"/>
+					</graphicElement>
+				</rectangle>
+				<textField>
+					<reportElement x="190" y="17" width="185" height="30" forecolor="#767676" uuid="853b16f1-130e-4486-a914-dd7569d9e63a"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{CPF Favorecido}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="17" width="185" height="30" forecolor="#767676" uuid="89e46ce9-4fcd-4616-af47-cabf56031955"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="18" isBold="true"/>
+					</textElement>
+					<text><![CDATA[CPF Favorecido:]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="84" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="20" width="555" height="64" uuid="b11aebe5-766b-4b6f-ae3c-fd2c521f44fe"/>
+				<graphicElement>
+					<pen lineStyle="Solid" lineColor="#DDDDDD"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="100" y="26" width="312" height="58" forecolor="#767676" uuid="90ccfa33-982d-47f2-a748-1a02fb1b5c44"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="25"/>
+				</textElement>
+				<text><![CDATA[Relátorio Prova Exercicio 1]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="23" forecolor="#F6F6F6" backcolor="#F6F6F6" uuid="4d9c2a24-48f7-412c-9bb8-c9fb937bee5d"/>
+				<graphicElement>
+					<pen lineStyle="Solid" lineColor="#DDDDDD"/>
+				</graphicElement>
+			</rectangle>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="38" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="10" width="555" height="23" forecolor="#F6F6F6" backcolor="#F6F6F6" uuid="39bb4cd9-2a47-40e5-b33e-504f40b28080"/>
+				<graphicElement>
+					<pen lineStyle="Solid" lineColor="#DDDDDD"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="150" y="10" width="240" height="23" forecolor="#767676" uuid="abdcdd13-fdfc-4eac-b412-3a5c383c6144"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valor Recebido: Favorecido]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<staticText>
+				<reportElement x="290" y="0" width="265" height="30" forecolor="#767676" uuid="94d81ced-6100-425f-abb9-0595d67b4b62"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#DDDDDD"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#DDDDDD"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#DDDDDD"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#DDDDDD"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valor Pagamento:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="290" height="30" forecolor="#767676" uuid="eee650fa-9c83-4313-9525-95c2d9fe5027"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#DDDDDD"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#DDDDDD"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#DDDDDD"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#DDDDDD"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nome Favorecido:]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField pattern="¤#,##0.00;¤-#,##0.00">
+				<reportElement style="Table 2_TD" x="290" y="-1" width="265" height="30" forecolor="#767676" uuid="b611c38f-4f20-45a8-8714-9191a6133b36"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#DDDDDD"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#DDDDDD"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#DDDDDD"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#DDDDDD"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[DOUBLE_VALUE($F{Valor Pagamento})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Table 2_TD" x="0" y="-1" width="290" height="30" forecolor="#767676" uuid="72ccf565-204e-4d23-8827-0c11ae189d07"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#DDDDDD"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#DDDDDD"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#DDDDDD"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#DDDDDD"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Nome Favorecido}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="26" forecolor="#686868" backcolor="#EEEEEE" uuid="07ca70ee-c921-43dc-9a6c-11ecb19991fb"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Pagina "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="26" forecolor="#686868" backcolor="#EEEEEE" uuid="3f50b148-dc1a-4d0c-a967-d0358033bc80"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
